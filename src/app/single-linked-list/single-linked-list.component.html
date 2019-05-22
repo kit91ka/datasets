@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-6">
+    <form (submit)="add()">
+      <input type="text" [(ngModel)]="addNumber" [ngModelOptions]="{standalone: true}">
+      <button type="submit">add number</button>
+    </form>
+    <form (submit)="searchNodeAt()">
+      <input type="text" [(ngModel)]="search" [ngModelOptions]="{standalone: true}">
+      <button type="submit">find index</button>
+    </form>
+    <form (submit)="remove()">
+      <input type="number" [(ngModel)]="removeIndex" [ngModelOptions]="{standalone: true}">
+      <button type="submit">remove in index</button>
+    </form>
+  </div>
+  <div class="col-6">
+  <pre>
+    {{list.list | json}}
+  </pre>
+  </div>
+</div>
