@@ -11,7 +11,7 @@ export class SingleLinkedListComponent implements OnInit {
     private search: number;
     removeIndex: number;
   constructor() {
-    window['a'] = this;
+    // window['a'] = this;
     this.list = new SingleLinkedList([]);
   }
   add() {
@@ -64,9 +64,10 @@ export class SingleLinkedList {
     this.length++;
     console.log(lastEl, 'after');
   }
-  searchNodeAt(position: number) {
+  searchNodeAt(position: number): ListElement {
     if (position < 0 || position >= this.length) {
-      return alert('индекс больше длины списка или меньше 0');
+      alert('индекс больше длины списка или меньше 0');
+      throw Error();
     }
     let val = this.list;
     let index = 0;

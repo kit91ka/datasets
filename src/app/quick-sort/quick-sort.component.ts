@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class QuickSortComponent implements OnInit {
   public arr: number[];
   constructor() {
-    window['a'] = this;
+    // window['a'] = this;
     this.arr = [1, 54, 4, 5, 6, 7, 8, 9, 11];
   }
 

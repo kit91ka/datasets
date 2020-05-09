@@ -12,36 +12,43 @@ export const routes: Routes = [
   {
     component: HomeComponent,
     path: '',
+    // @ts-ignore
     name : 'Главная'
   },
   {
     component: SingleLinkedListComponent,
     path: 'single-linked-list',
+    // @ts-ignore
     name : 'Односвязный список'
   },
   {
     component: QuickSortComponent,
     path: 'quick-sort',
+    // @ts-ignore
     name : 'Быстрая сортировка'
   },
   {
     component: BubbleSortComponent,
     path: 'bubble-sort',
+    // @ts-ignore
     name : 'Сортировка пузырьком'
   },
   {
     component: SelectionSortComponent,
     path: 'selection-sort',
+    // @ts-ignore
     name : 'Сортировка выбором'
   },
   {
     component: InsertionSortComponent,
     path: 'insertion-sort',
+    // @ts-ignore
     name : 'Сортировка вставкой'
   },
   {
     component: ShellSortComponent,
     path: 'shell-sort',
+    // @ts-ignore
     name : 'Сортировка Шелла'
   },
 ];
